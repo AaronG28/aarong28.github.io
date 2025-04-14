@@ -32,7 +32,7 @@ body {
 
 .logo {
     height: 50px; /* Ajusta según el tamaño de tu logo */
-    width: auto; /* Mantiene la proporción */
+    width: 250; /* Mantiene la proporción */
     transition: transform 0.3s ease; /* Efecto hover opcional */
 }
 

@@ -1,1 +1,100 @@
+/* Reset básico y tipografía */
+:root {
+    --color-primary: #0A2463;    /* Azul oscuro (branding) */
+    --color-accent: #FF3E41;     /* Rojo (destacados) */
+    --color-light: #F5F5F5;      /* Fondo */
+    --color-dark: #333333;       /* Texto */
+    --font-serif: Georgia, 'Times New Roman', serif;
+    --font-sans: 'Helvetica Neue', Arial, sans-serif;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    color: var(--color-dark);
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cabecera estilo "The Economist" */
+.header {
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-serif);
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: var(--color-primary);
+}
+
+.logo-subtext {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--color-dark);
+    font-weight: normal;
+}
+
+/* Barra de navegación */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.navbar a:hover {
+    color: var(--color-accent);
+}
+
+/* Artículo destacado */
+.featured-article {
+    padding: 2rem;
+    background-color: var(--color-light);
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+.featured-article h1 {
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    color: var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.featured-article p {
+    font-size: 1.1rem;
+}
+
+/* Responsive (móviles) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .navbar ul {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+}

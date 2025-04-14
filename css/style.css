@@ -139,8 +139,8 @@ body {
 }
 
 .img_articulo {
-    width: 250px; /* Ancho fijo de la imagen (este se puede sobrescribir) */
-    height: auto; /* Altura automática para mantener la proporción */
+    width: 200px; /* Ancho fijo de la imagen (este se puede sobrescribir) */
+    height: 250; /* Altura automática para mantener la proporción */
     float: left; /* La imagen flota a la izquierda por defecto */
     margin-right: 1em;
     margin-bottom: 0.5em;

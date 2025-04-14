@@ -28,17 +28,20 @@ body {
 .logo-container {
     padding: 1rem 0;
     text-align: center; /* Centrado (o 'left' para alinear a la izquierda) */
+    border-bottom: 1px solid #e0e0e0; /* Línea decorativa debajo del logo */
 }
 
 .logo {
-    height: 50px; /* Ajusta según el tamaño de tu logo */
-    width: 250; /* Mantiene la proporción */
-    transition: transform 0.3s ease; /* Efecto hover opcional */
+    max-width: 50px; /* Ancho máximo (ajusta según necesidad) */
+    height: 50px;    /* Mantiene la proporción */
+    width: 100%;     /* Hace que el logo sea responsive */
+    display: block;  /* Elimina espacios no deseados */
+    margin: 0 auto;  /* Centra el logo horizontalmente */
 }
 
 .logo:hover {
-    transform: scale(1.05); /* Efecto sutil al pasar el mouse */
-    opacity: 0.9;
+    transform: scale(0.98); /* Efecto sutil al pasar el mouse */
+    opacity: 0.8;
 }
 
 /* Versión responsive para móviles */

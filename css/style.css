@@ -32,8 +32,8 @@ body {
 }
 
 .logo {
-    max-width: 50px; /* Ancho máximo (ajusta según necesidad) */
-    height: 50px;    /* Mantiene la proporción */
+    max-width: 100px; /* Ancho máximo (ajusta según necesidad) */
+    height: 130px;    /* Mantiene la proporción */
     width: 100%;     /* Hace que el logo sea responsive */
     display: block;  /* Elimina espacios no deseados */
     margin: 0 auto;  /* Centra el logo horizontalmente */

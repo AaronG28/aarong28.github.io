@@ -67,12 +67,20 @@ body {
     color: var(--color-accent);
 }
 
+/* Logo */
+.logo:hover {
+    opacity: 0.8;
+}
+
 /* Artículo destacado */
 .featured-article {
     padding: 2rem;
     background-color: var(--color-light);
     margin: 2rem auto;
     max-width: 1200px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
 }
 
 .featured-article h1 {

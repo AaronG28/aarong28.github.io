@@ -23,7 +23,7 @@ body {
     margin: 0;
 }
 
-/*==============================================================================================================================================================*/
+/*=======================================================================================================================================================*/
 /* Cabecera estilo "The Economist" */
 .header {
     background-color: white;
@@ -48,7 +48,7 @@ body {
     font-weight: normal;
 }
 
-/*==============================================================================================================================================================*/
+/*=======================================================================================================================================================*/
 /* Barra de navegación */
 .navbar ul {
     display: flex;
@@ -69,7 +69,7 @@ body {
     color: var(--color-accent);
 }
 
-/*==============================================================================================================================================================*/
+/*=======================================================================================================================================================*/
 /* Artículo destacado */
 .featured-article {
     padding: 2rem;
@@ -89,7 +89,7 @@ body {
     font-size: 1.1rem;
 }
 
-/*==============================================================================================================================================================*/
+/*=======================================================================================================================================================*/
 /* Responsive (móviles) */
 @media (max-width: 768px) {
     .header {
@@ -103,7 +103,7 @@ body {
     }
 }
 
-/*==============================================================================================================================================================*/
+/*=======================================================================================================================================================*/
 /* Estilos para artículos */
 .article-container {
     max-width: 900px;
@@ -145,6 +145,15 @@ body {
     margin-right: 1em;
     margin-bottom: 0.5em;
 }
+
+.img_articulo_b{
+    width: 200px; /* Ancho fijo de la imagen (este se puede sobrescribir) */
+    height: 250; /* Altura automática para mantener la proporción */
+    float: right; /* La imagen flota a la izquierda por defecto */
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+}
+
 .article-content {
     padding: 2rem;
 }
@@ -193,7 +202,52 @@ blockquote {
 .tags a:hover {
     text-decoration: underline;
 }
-/*==============================================================================================================================================================*/
+
+/*=======================================================================================================================================================*/
 .pie {
     text-align: center; /* Centrar el texto del pie de página */
+}
+
+/*=======================================================================================================================================================*/
+/*NOTICIAS DESTACADAS*/
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-rows: repeat(2, 1fr);    /* 2 filas */
+    height: 80vh; /* 80% del viewport (ajustable) */
+    gap: 1px; /* Para bordes entre secciones */
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    position: relative;
+}
+
+/* Colores para cada sección */
+.featured { background: var(--color-primary); }
+.economy  { background: #0A4E3D; } /* Verde oscuro */
+.politics { background: #5E0A15; } /* Borgoña */
+.tech     { background: #3A0A4E; } /* Púrpura */
+
+/* Botón común */
+.button {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    margin-top: 1rem;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    background: white;
+    color: var(--color-dark);
 }

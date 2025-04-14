@@ -98,3 +98,7 @@ body {
         gap: 1rem;
     }
 }
+
+footer {
+    text-align: center; /* Centrar el texto del pie de página */
+}

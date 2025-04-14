@@ -23,35 +23,7 @@ body {
     margin: 0;
 }
 
-/*=====================================================================================*/
-/* Estilos para el logo */
-.logo-container {
-    padding: 1rem 0;
-    text-align: center; /* Centrado (o 'left' para alinear a la izquierda) */
-    border-bottom: 1px solid #e0e0e0; /* Línea decorativa debajo del logo */
-}
-
-.logo {
-    max-width: 100px; /* Ancho máximo (ajusta según necesidad) */
-    height: 130px;    /* Mantiene la proporción */
-    width: 100%;     /* Hace que el logo sea responsive */
-    display: block;  /* Elimina espacios no deseados */
-    margin: 0 auto;  /* Centra el logo horizontalmente */
-}
-
-.logo:hover {
-    transform: scale(0.98); /* Efecto sutil al pasar el mouse */
-    opacity: 0.8;
-}
-
-/* Versión responsive para móviles */
-@media (max-width: 768px) {
-    .logo {
-        height: 40px; /* Tamaño reducido en móviles */
-    }
-}
-
-/*=====================================================================================*/
+/*===================================================================================================================================*/
 /* Cabecera estilo "The Economist" */
 .header {
     background-color: white;
@@ -76,7 +48,7 @@ body {
     font-weight: normal;
 }
 
-/*=====================================================================================*/
+/*===================================================================================================================================*/
 /* Barra de navegación */
 .navbar ul {
     display: flex;
@@ -97,22 +69,13 @@ body {
     color: var(--color-accent);
 }
 
-/*=====================================================================================*/
-/* Logo */
-.logo:hover {
-    opacity: 0.8;
-}
-
-/*=====================================================================================*/
+/*===================================================================================================================================*/
 /* Artículo destacado */
 .featured-article {
     padding: 2rem;
     background-color: var(--color-light);
     margin: 2rem auto;
     max-width: 1200px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
 }
 
 .featured-article h1 {
@@ -126,7 +89,7 @@ body {
     font-size: 1.1rem;
 }
 
-/*=====================================================================================*/
+/*===================================================================================================================================*/
 /* Responsive (móviles) */
 @media (max-width: 768px) {
     .header {
@@ -138,12 +101,4 @@ body {
         margin-top: 1rem;
         gap: 1rem;
     }
-}
-
-/*=====================================================================================*/
-/* Estilo del pie de pagina*/
-footer {
-    text-align: center; /* Centrar el texto del pie de página */
-    padding: 1em; /* Relleno del pie de página */
-    font-size: 0.9em; /* Tamaño de fuente más pequeño del pie de página */
 }

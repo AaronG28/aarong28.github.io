@@ -146,14 +146,6 @@ body {
     margin-bottom: 0.5em;
 }
 
-.img_articulo_b{
-    width: 200px; /* Ancho fijo de la imagen (este se puede sobrescribir) */
-    height: 250; /* Altura automática para mantener la proporción */
-    float: right; /* La imagen flota a la izquierda por defecto */
-    margin-right: 1em;
-    margin-bottom: 0.5em;
-}
-
 .article-content {
     padding: 2rem;
 }

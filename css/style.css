@@ -23,6 +23,32 @@ body {
     margin: 0;
 }
 
+/*=====================================================================================*/
+/* Estilos para el logo */
+.logo-container {
+    padding: 1rem 0;
+    text-align: center; /* Centrado (o 'left' para alinear a la izquierda) */
+}
+
+.logo {
+    height: 50px; /* Ajusta según el tamaño de tu logo */
+    width: auto; /* Mantiene la proporción */
+    transition: transform 0.3s ease; /* Efecto hover opcional */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Efecto sutil al pasar el mouse */
+    opacity: 0.9;
+}
+
+/* Versión responsive para móviles */
+@media (max-width: 768px) {
+    .logo {
+        height: 40px; /* Tamaño reducido en móviles */
+    }
+}
+
+/*=====================================================================================*/
 /* Cabecera estilo "The Economist" */
 .header {
     background-color: white;
@@ -47,6 +73,7 @@ body {
     font-weight: normal;
 }
 
+/*=====================================================================================*/
 /* Barra de navegación */
 .navbar ul {
     display: flex;
@@ -67,11 +94,13 @@ body {
     color: var(--color-accent);
 }
 
+/*=====================================================================================*/
 /* Logo */
 .logo:hover {
     opacity: 0.8;
 }
 
+/*=====================================================================================*/
 /* Artículo destacado */
 .featured-article {
     padding: 2rem;
@@ -94,6 +123,7 @@ body {
     font-size: 1.1rem;
 }
 
+/*=====================================================================================*/
 /* Responsive (móviles) */
 @media (max-width: 768px) {
     .header {
@@ -107,6 +137,7 @@ body {
     }
 }
 
+/*=====================================================================================*/
 /* Estilo del pie de pagina*/
 footer {
     text-align: center; /* Centrar el texto del pie de página */

@@ -24,30 +24,81 @@ body {
 }
 
 /*===================================================================================================================================*/
-/* Cabecera estilo "The Economist" */
+/* Estructura de la cabecera */
 .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Separa nombre y menú */
+    padding: 1rem 2rem;
     background-color: white;
     border-bottom: 1px solid #e0e0e0;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.logo {
-    font-family: var(--font-serif);
-    font-weight: bold;
+/* Nombre del sitio (izquierda) */
+.site-name {
+    flex: 0 0 auto; /* Evita que crezca */
+    text-align: left;
+}
+
+.site-name h1 {
+    font-family: Georgia, serif;
     font-size: 1.8rem;
-    color: var(--color-primary);
+    color: #0A2463; /* Azul corporativo */
+    margin: 0;
+    line-height: 1;
 }
 
-.logo-subtext {
+.site-name .subtitle {
+    font-family: Helvetica, sans-serif;
+    font-size: 0.9rem;
+    color: #333;
     display: block;
-    font-size: 0.8rem;
-    color: var(--color-dark);
-    font-weight: normal;
+    line-height: 1.2;
 }
 
+/* Menú (centrado) */
+.navbar {
+    flex: 1; /* Ocupa el espacio restante */
+    text-align: center; /* Centra el menú */
+}
+
+.navbar ul {
+    display: inline-flex; /* Menú en línea */
+    list-style: none;
+    gap: 2rem; /* Espacio entre pestañas */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #0A2463; /* Azul al hover */
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .site-name {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
 /*===================================================================================================================================*/
 /* Barra de navegación */
 .navbar ul {

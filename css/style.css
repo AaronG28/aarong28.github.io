@@ -106,3 +106,10 @@ body {
         gap: 1rem;
     }
 }
+
+/* Estilo del pie de pagina*/
+footer {
+    text-align: center; /* Centrar el texto del pie de página */
+    padding: 1em; /* Relleno del pie de página */
+    font-size: 0.9em; /* Tamaño de fuente más pequeño del pie de página */
+}

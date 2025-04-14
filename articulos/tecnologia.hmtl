@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analítica 360 | Economía, Política & Tecnología</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <span class="logo-text">Analítica 360°</span>
+            <span class="logo-subtext">Análisis sin fronteras</span>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index.html">Portada</a></li>
+                <li><a href="economia.html">Economía</a></li>
+                <li><a href="politica.html">Política</a></li>
+                <li><a href="tecnologia.html">Tecnología</a></li>
+            </ul>
+        </nav>
+    </header>
+    <footer>
+        <p>&copy; 2025 Analítica 360 - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

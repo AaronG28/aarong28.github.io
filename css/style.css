@@ -1,19 +1,19 @@
-/* Reset básico y tipografía */
+/* Reset básico y tipografía (mantén esta sección) */
 :root {
-    --color-primary: #0A2463;    /* Azul oscuro (branding) */
-    --color-accent: #FF3E41;     /* Rojo (destacados) */
-    --color-light: #F5F5F5;      /* Fondo */
-    --color-dark: #333333;       /* Texto */
+    --color-primary: #0A2463;
+    --color-accent: #FF3E41;
+    --color-light: #F5F5F5;
+    --color-dark: #333333;
     --font-serif: Georgia, 'Times New Roman', serif;
     --font-sans: 'Helvetica Neue', Arial, sans-serif;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 body {
     font-family: var(--font-sans);
     line-height: 1.6;
@@ -23,8 +23,8 @@ body {
     margin: 0;
 }
 
-/*=======================================================================================================================================================*/
-/* Cabecera estilo "The Economist" */
+/*============================================================================================================================*/
+/* Cabecera */
 .header {
     background-color: white;
     border-bottom: 1px solid #e0e0e0;
@@ -33,14 +33,14 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .logo {
     font-family: var(--font-serif);
     font-weight: bold;
     font-size: 1.8rem;
     color: var(--color-primary);
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .logo-subtext {
     display: block;
     font-size: 0.8rem;
@@ -48,14 +48,14 @@ body {
     font-weight: normal;
 }
 
-/*=======================================================================================================================================================*/
+/*============================================================================================================================*/
 /* Barra de navegación */
 .navbar ul {
     display: flex;
     list-style: none;
     gap: 1.5rem;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .navbar a {
     text-decoration: none;
     color: var(--color-dark);
@@ -64,12 +64,12 @@ body {
     font-size: 0.9rem;
     letter-spacing: 0.5px;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .navbar a:hover {
     color: var(--color-accent);
 }
 
-/*=======================================================================================================================================================*/
+/*============================================================================================================================*/
 /* Responsive (móviles) */
 @media (max-width: 768px) {
     .header {
@@ -83,33 +83,33 @@ body {
     }
 }
 
-/*=======================================================================================================================================================*/
+/*============================================================================================================================*/
 /* Estilos para artículos */
 .article-container {
     max-width: 900px;
     margin: 2rem auto;
     padding: 0 1rem;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .article {
     background: white;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     border-radius: 8px;
     overflow: hidden;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .article-header {
     padding: 2rem;
     border-bottom: 1px solid #eee;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .article h1 {
     font-family: var(--font-serif);
     color: var(--color-primary);
     font-size: 2rem;
     margin-bottom: 1rem;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .article-meta {
     color: #666;
     font-size: 0.9rem;
@@ -117,25 +117,25 @@ body {
     display: flex;
     gap: 1rem;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .img_articulo {
-    width: 200px; /* Ancho fijo de la imagen (este se puede sobrescribir) */
-    height: 250; /* Altura automática para mantener la proporción */
-    float: left; /* La imagen flota a la izquierda por defecto */
+    width: 200px;
+    height: 250;
+    float: left;
     margin-right: 1em;
     margin-bottom: 0.5em;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .article-content {
     padding: 2rem;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .lead {
     font-size: 1.2rem;
     line-height: 1.7;
     color: var(--color-dark);
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 blockquote {
     border-left: 4px solid var(--color-accent);
     padding-left: 1rem;
@@ -143,89 +143,126 @@ blockquote {
     font-style: italic;
     color: #555;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .data-table {
     width: 100%;
     border-collapse: collapse;
     margin: 1.5rem 0;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .data-table th, .data-table td {
     padding: 0.75rem;
     text-align: left;
     border-bottom: 1px solid #eee;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .data-table th {
     background-color: var(--color-light);
     font-weight: 600;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .tags {
     font-size: 0.9rem;
     color: #666;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .tags a {
     color: var(--color-primary);
     text-decoration: none;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .tags a:hover {
     text-decoration: underline;
 }
 
-/*=======================================================================================================================================================*/
+/*============================================================================================================================*/
+/* Pie de página (mantén esta sección) */
 .pie {
-    text-align: center; /* Centrar el texto del pie de página */
+    text-align: center;
 }
 
-/*=======================================================================================================================================================*/
-/*NOTICIAS DESTACADAS*/
-.home-grid {
+/* ========================================================================== */
+/* ESTILOS PARA LA PORTADA (GRID COMPLEJO) */
+/* ========================================================================== */
+.home-grid-complex {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-    grid-template-rows: repeat(2, 1fr);    /* 2 filas */
-    height: 80vh; /* 80% del viewport (ajustable) */
-    gap: 1px; /* Para bordes entre secciones */
+    grid-template-columns: 2fr 1fr 1fr; /* Tres columnas con diferentes anchos relativos */
+    grid-template-rows: auto auto;    /* Dos filas de altura automática */
+    gap: 10px; /* Espacio entre los elementos del grid */
+    padding: 10px; /* Espacio alrededor del grid */
+    height: auto; /* Ajusta la altura según el contenido */
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .grid-item {
+    background: #f0f0f0; /* Un color de fondo base para los recuadros */
+    color: var(--color-dark);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 2rem;
-    color: white;
-    position: relative;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
-/* Colores para cada sección */
-.featured { background: var(--color-primary); }
-.economy  { background: #0A4E3D; } /* Verde oscuro */
-.politics { background: #5E0A15; } /* Borgoña */
-.tech     { background: #3A0A4E; } /* Púrpura */
-
-/* Botón común */
+/*============================================================================================================================*/
+/* Posicionamiento específico de cada noticia */
+.noticia-1 {
+    grid-column: 1 / 2; /* Ocupa la primera columna */
+    grid-row: 1 / 2;    /* Ocupa la primera fila */
+    /* Ajusta la altura para que sea más grande */
+}
+.img_articulo1 {
+    width: 100px; /* Ajusta el ancho al tamaño deseado */
+    height: auto; /* Mantiene la proporción de la imagen */
+    float: left; /* Coloca la imagen a la izquierda */
+    margin-right: 10px; /* Añade un espacio a la derecha de la imagen para separarla del texto */
+    margin-bottom: 5px; /* Opcional: añade un poco de espacio debajo de la imagen */
+}
+/*--------------------------------------------------------------------------------------------------*/
+.noticia-2 {
+    grid-column: 1 / 2; /* Ocupa la primera columna */
+    grid-row: 2 / 3;    /* Ocupa la segunda fila */
+}
+/*--------------------------------------------------------------------------------------------------*/
+.noticia-3 {
+    grid-column: 2 / 3; /* Ocupa la segunda columna */
+    grid-row: 1 / 2;    /* Ocupa la primera fila */
+}
+/*--------------------------------------------------------------------------------------------------*/
+.noticia-4 {
+    grid-column: 3 / 4; /* Ocupa la tercera columna */
+    grid-row: 1 / 2;    /* Ocupa la primera fila */
+}
+/*--------------------------------------------------------------------------------------------------*/
+.noticia-5 {
+    grid-column: 2 / 4; /* Ocupa las columnas segunda y tercera */
+    grid-row: 2 / 3;    /* Ocupa la segunda fila */
+    /* Haz este recuadro más ancho */
+}
+/*--------------------------------------------------------------------------------------------------*/
+.noticia-6 {
+    grid-column: 3 / 4; /* Ocupa la tercera columna */
+    grid-row: 2 / 3;    /* Ocupa la segunda fila */
+}
+/*--------------------------------------------------------------------------------------------------*/
+/* Estilos adicionales para los botones (si los necesitas) */
 .button {
     display: inline-block;
-    padding: 0.5rem 1.5rem;
-    margin-top: 1rem;
-    background: rgba(255,255,255,0.2);
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    background: var(--color-primary);
     color: white;
     text-decoration: none;
-    border: 1px solid white;
-    transition: all 0.3s;
+    border-radius: 5px;
 }
-
+/*--------------------------------------------------------------------------------------------------*/
 .button:hover {
-    background: white;
-    color: var(--color-dark);
+    background: darken(var(--color-primary), 10%);
 }
 
-/*=======================================================================================================================================================*/
-/*VISIBILIDAD DE ARTICULOS*/
+/*============================================================================================================================*/
+/* VISIBILIDAD DE ARTICULOS */
 #economia_uno {
     display: none;
 }

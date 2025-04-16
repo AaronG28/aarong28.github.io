@@ -246,7 +246,7 @@ blockquote {
 }
 /*--------------------------------------------------------------------------------------------------*/
 .noticia-5 {
-    grid-column: 2 / 4; /* Ocupa las columnas segunda y tercera */
+    grid-column: 2 / 3; /* Ocupa las columnas segunda y tercera */
     grid-row: 2 / 3;    /* Ocupa la segunda fila */
     /* Haz este recuadro más ancho */
 }

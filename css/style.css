@@ -96,15 +96,13 @@ body {
         margin-top: 1rem;
         gap: 1rem;
     }
-
-    .home-grid-complex {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ejemplo inicial para escritorios */
-        gap: 1em; /* Espacio entre los elementos de la grid */
-        padding: 1em; /* Espacio alrededor de la grid */
-    }
 }
 
+@media (max-width: 768px) {
+    body {
+        background-color: lightblue !important; /* Solo para probar */
+    }
+}
 /*============================================================================================================================*/
 /* Estilos para artículos */
 .article-container {

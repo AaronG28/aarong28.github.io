@@ -86,6 +86,7 @@ body {
 
 /*============================================================================================================================*/
 /* Responsive (móviles) */
+/* Responsive (móviles) */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -96,11 +97,25 @@ body {
         margin-top: 1rem;
         gap: 1rem;
     }
-}
 
-@media (max-width: 768px) {
-    body {
-        background-color: lightblue !important; /* Solo para probar */
+    /* Estilos específicos para la grid en móviles */
+    .home-grid-complex {
+        grid-template-columns: 1fr !important; /* Una sola columna en móviles */
+        padding: 10px !important; /* Asegúrate de que el padding se aplique */
+        gap: 15px !important; /* Aumenta el espacio entre elementos si lo deseas */
+    }
+
+    .grid-item {
+        display: block !important; /* Cambia a display block para que ocupe todo el ancho */
+        text-align: left !important; /* Alinea el texto a la izquierda para una mejor lectura */
+    }
+
+    .grid-item img {
+        width: 100% !important; /* La imagen ocupa todo el ancho del contenedor */
+        height: auto !important; /* Mantiene la proporción */
+        float: none !important; /* Elimina el float */
+        margin-right: 0 !important;
+        margin-bottom: 0.5em !important; /* Añade un poco de espacio debajo de la imagen */
     }
 }
 /*============================================================================================================================*/

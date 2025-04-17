@@ -96,6 +96,10 @@ body {
         margin-top: 1rem;
         gap: 1rem;
     }
+
+    .home-grid-complex {
+        grid-template-columns: 1fr; /* Mostrar los elementos en una sola columna en móviles */
+    }
 }
 
 /*============================================================================================================================*/

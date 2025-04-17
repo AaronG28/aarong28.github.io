@@ -86,7 +86,6 @@ body {
 
 /*============================================================================================================================*/
 /* Responsive (móviles) */
-/* Responsive (móviles) */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -98,6 +97,16 @@ body {
         gap: 1rem;
     }
 }
+
+@media (max-width: 768px) {
+    .home-grid-complex {
+      grid-template-columns: 1fr; /* 1 columna en móviles */
+    }
+    .grid-item {
+      grid-column: 1;
+      grid-row: auto;
+    }
+  }
 /*============================================================================================================================*/
 /* Estilos para artículos */
 .article-container {
@@ -135,7 +144,7 @@ body {
 /*--------------------------------------------------------------------------------------------------*/
 .img_articulo {
     width: 200px;
-    height: 250;
+    height: 250px;
     float: left;
     margin-right: 1em;
     margin-bottom: 0.5em;
@@ -143,7 +152,7 @@ body {
 
 .img_economia {
     width: 300px;
-    height: 250;
+    height: 250px;
     float: left;
     margin-right: 1em;
     margin-bottom: 0.5em;
@@ -211,12 +220,13 @@ blockquote {
 /* ========================================================================== */
 .home-grid-complex {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr; /* Tres columnas con diferentes anchos relativos */
-    grid-template-rows: auto auto;    /* Dos filas de altura automática */
-    gap: 10px; /* Espacio entre los elementos del grid */
-    padding: 10px; /* Espacio alrededor del grid */
+    grid-template-columns: 1fr 1fr; /* Tres columnas con diferentes anchos relativos */
+    grid-template-rows: auto auto auto;    /* Dos filas de altura automática */
+    gap: 15px; /* Espacio entre los elementos del grid */
+    padding: 15px; /* Espacio alrededor del grid */
     height: auto; /* Ajusta la altura según el contenido */
 }
+
 /*--------------------------------------------------------------------------------------------------*/
 .grid-item {
     background: #f0f0f0; /* Un color de fondo base para los recuadros */
@@ -246,29 +256,29 @@ blockquote {
 }
 /*--------------------------------------------------------------------------------------------------*/
 .noticia-2 {
-    grid-column: 1 / 2; /* Ocupa la primera columna */
-    grid-row: 2 / 3;    /* Ocupa la segunda fila */
+    grid-column: 2 / 3; /* Ocupa la primera columna */
+    grid-row: 1 / 2;    /* Ocupa la segunda fila */
 }
 /*--------------------------------------------------------------------------------------------------*/
 .noticia-3 {
-    grid-column: 2 / 3; /* Ocupa la segunda columna */
-    grid-row: 1 / 2;    /* Ocupa la primera fila */
+    grid-column: 1 / 2; /* Ocupa la segunda columna */
+    grid-row: 2 / 3;    /* Ocupa la primera fila */
 }
 /*--------------------------------------------------------------------------------------------------*/
 .noticia-4 {
-    grid-column: 3 / 4; /* Ocupa la tercera columna */
-    grid-row: 1 / 2;    /* Ocupa la primera fila */
+    grid-column: 2 / 3; /* Ocupa la tercera columna */
+    grid-row: 2 / 3;    /* Ocupa la primera fila */
 }
 /*--------------------------------------------------------------------------------------------------*/
 .noticia-5 {
-    grid-column: 2 / 3; /* Ocupa las columnas segunda y tercera */
-    grid-row: 2 / 3;    /* Ocupa la segunda fila */
+    grid-column: 1 / 2; /* Ocupa las columnas segunda y tercera */
+    grid-row: 3 / 4;    /* Ocupa la segunda fila */
     /* Haz este recuadro más ancho */
 }
 /*--------------------------------------------------------------------------------------------------*/
 .noticia-6 {
-    grid-column: 3 / 4; /* Ocupa la tercera columna */
-    grid-row: 2 / 3;    /* Ocupa la segunda fila */
+    grid-column: 2 / 3; /* Ocupa la tercera columna */
+    grid-row: 3 / 4;    /* Ocupa la segunda fila */
 }
 /*--------------------------------------------------------------------------------------------------*/
 /* Estilos adicionales para los botones (si los necesitas) */
@@ -283,7 +293,7 @@ blockquote {
 }
 /*--------------------------------------------------------------------------------------------------*/
 .button:hover {
-    background: darken(var(--color-primary), 10%);
+    background: color-mix(in srgb, var(--color-primary), black 15%);
 }
 
 /*============================================================================================================================*/

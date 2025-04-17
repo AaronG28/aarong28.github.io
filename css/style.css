@@ -34,11 +34,13 @@ body {
     align-items: center;
 }
 /*--------------------------------------------------------------------------------------------------*/
-.logo {
+.logo a {
     font-family: var(--font-serif);
     font-weight: bold;
     font-size: 1.8rem;
     color: var(--color-primary);
+    color: #0A2463; /* Hereda el color del elemento padre (el div.logo) */
+    text-decoration: none; /* Elimina el subrayado */
 }
 /*--------------------------------------------------------------------------------------------------*/
 .logo-subtext {

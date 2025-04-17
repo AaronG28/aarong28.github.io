@@ -98,7 +98,10 @@ body {
     }
 
     .home-grid-complex {
-        grid-template-columns: 1fr; /* Mostrar los elementos en una sola columna en móviles */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ejemplo inicial para escritorios */
+        gap: 1em; /* Espacio entre los elementos de la grid */
+        padding: 1em; /* Espacio alrededor de la grid */
     }
 }
 

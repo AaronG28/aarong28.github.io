@@ -133,22 +133,6 @@ body {
     display: flex;
     gap: 1rem;
 }
-/*--------------------------------------------------------------------------------------------------*/
-.img_articulo {
-    width: 200px;
-    height: 250px;
-    float: left;
-    margin-right: 1em;
-    margin-bottom: 0.5em;
-}
-
-.img_economia {
-    width: 300px;
-    height: 250px;
-    float: left;
-    margin-right: 1em;
-    margin-bottom: 0.5em;
-}
 
 /* Otros estilos CSS que ya tengas en tu archivo style.css */
 /*--------------------------------------------------------------------------------------------------*/

@@ -6,6 +6,7 @@
     --color-dark: #333333;
     --font-serif: Georgia, 'Times New Roman', serif;
     --font-sans: 'Helvetica Neue', Arial, sans-serif;
+    --footer-bg: #111111;
 }
 /*--------------------------------------------------------------------------------------------------*/
 * {
@@ -98,29 +99,6 @@ body {
     }
 }
 
-/* ================================================== */
-/* RESPONSIVE: MÓVIL (Menos de 768px) */
-/* ================================================== */
-@media (max-width: 768px) {
-    .home-grid-complex {
-      grid-template-columns: 1fr; /* Cambia a 1 columna */
-      gap: 20px; /* Espacio entre filas */
-      padding: 15px; /* Ajuste de padding para móvil */
-    }
-  
-    /* Fuerza a todos los grid-items a ocupar 1 columna */
-    .grid-item {
-      grid-column: 1 !important; /* !important para sobrescribir las posiciones específicas */
-    }
-  
-    /* Ajustes adicionales para imágenes en móvil */
-    .img_articulo, .img_economia {
-      float: none; /* Elimina el float en móvil */
-      width: 100%; /* Ocupa el ancho completo */
-      margin-right: 0; /* Elimina margen derecho */
-      margin-bottom: 15px; /* Espacio debajo de la imagen */
-    }
-  }
 /*============================================================================================================================*/
 /* Estilos para artículos */
 .article-container {
@@ -232,68 +210,29 @@ blockquote {
 /* ========================================================================== */
 /* ESTILOS PARA LA PORTADA (GRID COMPLEJO) */
 /* ========================================================================== */
-.home-grid-complex {
+.portada {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.noticia-destacada {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Tres columnas con diferentes anchos relativos */
-    grid-template-rows: auto auto auto;    /* Dos filas de altura automática */
-    gap: 15px; /* Espacio entre los elementos del grid */
-    padding: 15px; /* Espacio alrededor del grid */
-    height: auto; /* Ajusta la altura según el contenido */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
 }
 
-/*--------------------------------------------------------------------------------------------------*/
-.grid-item {
-    background: #f0f0f0; /* Un color de fondo base para los recuadros */
-    color: var(--color-dark);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.noticia {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
-    padding: 1rem;
-    border-radius: 5px;
 }
 
-/*============================================================================================================================*/
-/* Posicionamiento específico de cada noticia */
-.noticia-1 {
-    grid-column: 1 / 2; /* Ocupa la primera columna */
-    grid-row: 1 / 2;    /* Ocupa la primera fila */
-    /* Ajusta la altura para que sea más grande */
-}
-.img_articulo1 {
-    width: 100px; /* Ajusta el ancho al tamaño deseado */
-    height: auto; /* Mantiene la proporción de la imagen */
-    float: left; /* Coloca la imagen a la izquierda */
-    margin-right: 10px; /* Añade un espacio a la derecha de la imagen para separarla del texto */
-    margin-bottom: 5px; /* Opcional: añade un poco de espacio debajo de la imagen */
-}
-/*--------------------------------------------------------------------------------------------------*/
-.noticia-2 {
-    grid-column: 1 / 2; /* Ocupa la primera columna */
-    grid-row: 2 / 3;    /* Ocupa la segunda fila */
-}
-/*--------------------------------------------------------------------------------------------------*/
-.noticia-3 {
-    grid-column: 2 / 3; /* Ocupa la segunda columna */
-    grid-row: 1 / 2;    /* Ocupa la primera fila */
-}
-/*--------------------------------------------------------------------------------------------------*/
-.noticia-4 {
-    grid-column: 3 / 4; /* Ocupa la tercera columna */
-    grid-row: 1 / 2;    /* Ocupa la primera fila */
-}
-/*--------------------------------------------------------------------------------------------------*/
-.noticia-5 {
-    grid-column: 2 / 3; /* Ocupa las columnas segunda y tercera */
-    grid-row: 2 / 3;    /* Ocupa la segunda fila */
-    /* Haz este recuadro más ancho */
-}
-/*--------------------------------------------------------------------------------------------------*/
-.noticia-6 {
-    grid-column: 3 / 4; /* Ocupa la tercera columna */
-    grid-row: 2 / 3;    /* Ocupa la segunda fila */
-}
 /*--------------------------------------------------------------------------------------------------*/
 /* Estilos adicionales para los botones (si los necesitas) */
 .button {

@@ -134,11 +134,6 @@ body {
     gap: 1rem;
 }
 
-/* Otros estilos CSS que ya tengas en tu archivo style.css */
-/*--------------------------------------------------------------------------------------------------*/
-.article-content {
-    padding: 2rem;
-}
 /*--------------------------------------------------------------------------------------------------*/
 .lead {
     font-size: 1.2rem;
@@ -215,6 +210,25 @@ blockquote {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
+}
+
+/*Recuadros interactivos: se hace una sombra al pasar el ratos*/
+.noticia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.noticia h3 {
+    color: var(--primary-color);
+}
+
+.article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.article h3 {
+    color: var(--primary-color);
 }
 
 /*--------------------------------------------------------------------------------------------------*/

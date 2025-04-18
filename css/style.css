@@ -65,6 +65,15 @@ body {
     height: auto; /* Mantiene la proporción */
 }
 /*============================================================================================================================*/
+.intro { /*intro*/
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: var(--color-primary);
+    font-size: 1.5em; /* Ejemplo: 1.5 veces el tamaño de fuente predeterminado */
+}
+/*============================================================================================================================*/
 /* Barra de navegación */
 .navbar ul {
     display: flex;

@@ -193,6 +193,10 @@ blockquote {
 /* Pie de página */
 .pie {
     text-align: center;
+    margin-top: 50px; /* Espacio arriba del footer */
+    padding: 20px 0; /* Espacio interno arriba y abajo */
+    background-color: #f8f9fa; /* Color de fondo opcional */
+    border-top: 1px solid #e1e1e1; /* Borde superior opcional */
 }
 
 /* ========================================================================== */

@@ -74,7 +74,7 @@ body {
     font-size: 1.5em;
 }
 /*============================================================================================================================*/
-/* Barra de navegación */
+/* Barra de navegación (estilos originales para desktop) */
 .navbar ul {
     display: flex;
     list-style: none;
@@ -102,9 +102,32 @@ body {
         padding: 1rem;
     }
 
+    /* Nuevos estilos solo para móvil */
+    .navbar {
+        width: 100%;
+        overflow-x: auto; /* Permite scroll horizontal */
+        overflow-y: hidden; /* Oculta scroll vertical */
+        -webkit-overflow-scrolling: touch; /* Mejor desplazamiento en iOS */
+    }
+
     .navbar ul {
         margin-top: 1rem;
         gap: 1rem;
+        padding-bottom: 10px; /* Espacio para no cortar el contenido */
+        white-space: nowrap; /* Evita que los items se rompan en varias líneas */
+        /* Opcional: puedes añadir un padding lateral si quieres */
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    /* Opcional: estilo visual para el scrollbar */
+    .navbar::-webkit-scrollbar {
+        height: 4px;
+    }
+    
+    .navbar::-webkit-scrollbar-thumb {
+        background-color: var(--color-accent);
+        border-radius: 2px;
     }
 }
 

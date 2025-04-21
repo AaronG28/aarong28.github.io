@@ -139,9 +139,10 @@ body {
     padding: 0 1rem;
 }
 
-.author{
-    color: #e36466;
+.author {
+    color: #FF3E41;
 }
+
 /*--------------------------------------------------------------------------------------------------*/
 .article {
     background: white;
@@ -238,8 +239,8 @@ blockquote {
 
 .noticia-destacada {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
     margin-top: 30px;
 }
 

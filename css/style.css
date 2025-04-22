@@ -297,3 +297,58 @@ blockquote {
 #tecnologia_uno{
     display: none;
 }
+
+/*===========================================================================================================================*/
+/* Estilos para el formulario de contacto */
+.article-container form div {
+    margin-bottom: 1rem; /* Espacio entre los campos del formulario */
+    display: flex; /* Alinea la etiqueta y el campo en la misma línea */
+    flex-direction: column; /* Coloca la etiqueta encima del campo en pantallas pequeñas */
+}
+
+.article-container form label {
+    display: block; /* Asegura que la etiqueta ocupe todo el ancho disponible */
+    font-weight: 500; /* Hace la etiqueta un poco más resaltada */
+    margin-bottom: 0.3rem; /* Espacio entre la etiqueta y el campo */
+    color: var(--color-dark); /* Utiliza tu color de texto principal */
+}
+
+.article-container form input[type="text"],
+.article-container form input[type="email"],
+.article-container form input[type="tel"],
+.article-container form input[type="asunto"],
+.article-container form textarea {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    padding: 0.7rem; /* Espacio interno para el texto */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-family: var(--font-sans); /* Utiliza tu fuente principal */
+    font-size: 1rem;
+    color: var(--color-dark);
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+.article-container form textarea {
+    min-height: 100px; /* Altura mínima para el área de texto */
+}
+
+/* Estilos responsivos para el formulario (opcional) */
+@media (min-width: 769px) {
+    .article-container form div {
+        flex-direction: row; /* Coloca la etiqueta a la izquierda del campo en pantallas más grandes */
+        align-items: center; /* Alinea verticalmente la etiqueta y el campo */
+    }
+
+    .article-container form label {
+        width: 150px; /* Ancho fijo para las etiquetas en pantallas grandes */
+        margin-right: 1rem; /* Espacio entre la etiqueta y el campo */
+        text-align: right; /* Alinea el texto de la etiqueta a la derecha */
+    }
+}
+
+/* El botón de enviar ya tiene estilos por la clase "button" */
+.article-container form button[type="submit"] {
+    margin-top: 1rem; /* Espacio encima del botón */
+    text-align: center;
+}
+

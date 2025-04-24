@@ -1,0 +1,107 @@
+
+
+/* Estilo personalizado para encabezado de artículos */
+.article-header h1 {
+    font-size: 2rem;
+    color: #174e79;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.article-header .article-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.article-meta img {
+    border-radius: 50%;
+}
+
+/* Estilo del cuerpo del artículo */
+.article-container {
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 0 1em;
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 10px;
+}
+
+  
+/* Ajustar imágenes dentro del artículo */
+.article-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+}
+  
+
+/* Enlaces del artículo */
+.article-header a {
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+.article-header a:hover {
+    color: #0077b6;
+}
+
+/* Fondo personalizado para sección Economía */
+body {
+    background-color: #f4f9fb;
+}
+
+/* Centrado del bloque de imagen */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Mejora en las blockquotes */
+  blockquote {
+    font-style: italic;
+    margin: 1.5em auto;
+    padding: 1em 1.5em;
+    border-left: 4px solid #ccc;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    line-height: 1.6;
+  }
+  
+  /* Mejora de listas con separación */
+  ul {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+  }
+  
+  ul li {
+    margin-bottom: 0.5em;
+  }
+  
+  /* Alineación y estilo para h2 */
+  h2 {
+    margin-top: 2em;
+    font-size: 1.8em;
+    color: #003366;
+  }
+  
+  /* Estilo para párrafos introductorios */
+  .contenido-articulo p {
+    line-height: 1.8;
+    margin-bottom: 1.2em;
+  }
+  
+  /* Imagen del artículo */
+  .contenido-articulo img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

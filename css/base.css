@@ -1,0 +1,120 @@
+/* ========== VARIABLES ========== */
+:root {
+    /* Colores principales */
+    --azul-oscuro: #0A2463;
+    --azul-medio: #3E92CC;
+    --azul-claro: #D6E8FF;
+    --blanco: #FFFFFF;
+    --gris-claro: #F5F5F5;
+    --gris-medio: #E0E0E0;
+    --gris-oscuro: #333333;
+    --negro: #111111;
+    
+    /* Colores de categorías */
+    --categoria-politica: #D32F2F;
+    --categoria-economia: #388E3C;
+    --categoria-tecnologia: #1976D2;
+    --categoria-historia: #7B1FA2;
+    --categoria-mundo: #FFA000;
+    
+    /* Tipografía */
+    --fuente-principal: 'Helvetica Neue', Arial, sans-serif;
+    --fuente-secundaria: Georgia, 'Times New Roman', serif;
+    
+    /* Espaciados */
+    --espacio-xs: 0.5rem;
+    --espacio-sm: 1rem;
+    --espacio-md: 1.5rem;
+    --espacio-lg: 2rem;
+    --espacio-xl: 3rem;
+    
+    /* Bordes */
+    --radio-borde: 8px;
+    --radio-borde-sm: 4px;
+  }
+  
+  /* ========== RESET Y ESTILOS BASE ========== */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--fuente-principal);
+    line-height: 1.6;
+    color: var(--gris-oscuro);
+    background-color: var(--gris-claro);
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* ========== TIPOGRAFÍA ========== */
+  h1, h2, h3, h4 {
+    font-family: var(--fuente-secundaria);
+    line-height: 1.2;
+    margin-bottom: var(--espacio-sm);
+  }
+  
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.25rem; }
+  
+  p {
+    margin-bottom: var(--espacio-sm);
+  }
+  
+  /* ========== UTILIDADES ========== */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--espacio-md) 0;
+  }
+  
+  .divider {
+    border: none;
+    height: 2px;
+    background-color: var(--azul-medio);
+    margin: var(--espacio-sm) auto var(--espacio-md);
+    opacity: 0.3;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .highlight {
+    position: relative;
+  }
+  
+  .highlight::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(10,36,99,0.1) 0%, rgba(62,146,204,0.2) 100%);
+    z-index: -1;
+    border-radius: var(--radio-borde);
+  }

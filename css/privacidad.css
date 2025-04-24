@@ -1,0 +1,116 @@
+/* ========== ESTILOS ESPECÍFICOS PARA POLÍTICA DE PRIVACIDAD ========== */
+.politica-privacidad {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--blanco);
+    border-radius: var(--radio-borde);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.politica-privacidad h2 {
+    color: var(--azul-oscuro);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--azul-medio);
+}
+
+.politica-privacidad h3 {
+    color: var(--azul-oscuro);
+    font-size: 1.4rem;
+    margin: 2rem 0 1rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.politica-privacidad h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6rem;
+    width: 6px;
+    height: 1.2rem;
+    background-color: var(--azul-medio);
+    border-radius: 3px;
+}
+
+.politica-privacidad p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--gris-oscuro);
+    margin-bottom: 1rem;
+}
+
+.politica-privacidad ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.politica-privacidad li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+
+.politica-privacidad li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--azul-medio);
+    font-weight: bold;
+}
+
+.politica-privacidad a {
+    color: var(--azul-medio);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.politica-privacidad a:hover {
+    text-decoration: underline;
+}
+
+.update-date {
+    font-size: 0.9rem;
+    color: var(--gris-oscuro);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--azul-claro);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radio-borde-sm);
+    margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .politica-privacidad {
+        padding: 1.5rem;
+    }
+    
+    .politica-privacidad h2 {
+        font-size: 1.8rem;
+    }
+    
+    .politica-privacidad h3 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .politica-privacidad {
+        padding: 1rem;
+    }
+    
+    .politica-privacidad li {
+        padding-left: 1rem;
+    }
+}

@@ -1,128 +1,136 @@
-
-
-/* Estilo personalizado para encabezado de artículos */
+/* ========== ESTILOS DE ARTÍCULO - ARMONIZADO ========== */
+/* Usa variables CSS de base.css para consistencia */
 .article-header h1 {
-    font-size: 2rem;
-    color: #174e79;
-    margin-bottom: 0.5em;
-    font-weight: bold;
+  font-size: 2rem;
+  color: var(--azul-oscuro); /* Reemplaza #174e79 */
+  margin-bottom: var(--espacio-sm);
+  font-weight: 700;
+  font-family: var(--fuente-secundaria);
 }
 
 .article-header .article-meta {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-xs);
+  font-size: 0.9rem;
+  color: var(--gris-oscuro);
+  margin-bottom: var(--espacio-md);
 }
 
 .article-meta img {
-    border-radius: 50%;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border: 2px solid var(--gris-claro);
 }
 
-/* Estilo del cuerpo del artículo */
 .article-container {
-    max-width: 900px;
-    margin: 2em auto;
-    padding: 0 1em;
-    font-family: 'Georgia', serif;
-    line-height: 1.6;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    border-radius: 10px;
+  max-width: 900px;
+  margin: var(--espacio-xl) auto;
+  padding: 0 var(--espacio-md);
+  font-family: var(--fuente-secundaria);
+  line-height: 1.7;
+  background: var(--blanco);
+  box-shadow: var(--sombra-suave);
+  border-radius: var(--radio-borde);
 }
 
-  
-/* Ajustar imágenes dentro del artículo */
+/* Imágenes */
 .article-container img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1em auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: var(--espacio-md) auto;
+  border-radius: var(--radio-borde-sm);
 }
-  
 
-/* Enlaces del artículo */
+/* Enlaces */
 .article-header a {
-    color: #222;
-    transition: color 0.3s ease;
+  color: var(--azul-oscuro);
+  transition: all 0.3s ease;
 }
 
 .article-header a:hover {
-    color: #0077b6;
+  color: var(--azul-medio);
 }
 
-/* Fondo personalizado para sección Economía */
-body {
-    background-color: #f4f9fb;
+/* Bloques especiales */
+blockquote {
+  font-style: italic;
+  margin: var(--espacio-lg) auto;
+  padding: var(--espacio-md);
+  border-left: 4px solid var(--azul-medio);
+  background-color: var(--gris-claro);
+  max-width: 800px;
+  line-height: 1.7;
+  border-radius: 0 var(--radio-borde) var(--radio-borde) 0;
 }
 
-/* Centrado del bloque de imagen */
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  /* Mejora en las blockquotes */
-  blockquote {
-    font-style: italic;
-    margin: 1.5em auto;
-    padding: 1em 1.5em;
-    border-left: 4px solid #ccc;
-    background-color: #f9f9f9;
-    max-width: 800px;
-    line-height: 1.6;
-  }
-  
-  /* Mejora de listas con separación */
-  ul {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    padding-left: 1.5em;
-  }
-  
-  ul li {
-    margin-bottom: 0.5em;
-  }
-  
-  /* Alineación y estilo para h2 */
-  h2 {
-    margin-top: 2em;
-    font-size: 1.8em;
-    color: #003366;
-  }
-  
-  /* Estilo para párrafos introductorios */
-  .contenido-articulo p {
-    line-height: 1.8;
-    margin-bottom: 1.2em;
-  }
-  
-  /* Imagen del artículo */
-  .contenido-articulo img {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+/* Listas */
+ul {
+  margin: var(--espacio-md) 0;
+  padding-left: var(--espacio-lg);
+}
 
+ul li {
+  margin-bottom: var(--espacio-xs);
+  position: relative;
+  list-style-type: none;
+}
+
+ul li::before {
+  content: "•";
+  color: var(--azul-medio);
+  position: absolute;
+  left: -15px;
+}
+
+/* Encabezados */
+h2 {
+  margin: var(--espacio-xl) 0 var(--espacio-md);
+  font-size: 1.6rem;
+  color: var(--azul-oscuro);
+  position: relative;
+  padding-bottom: var(--espacio-xs);
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--azul-medio);
+}
+
+/* Figuras */
 figure {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem auto;
-  max-width: 600px;
-  padding: 1rem 0;
-}
-
-figure img {
+  margin: var(--espacio-xl) auto;
   max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* sombra suave opcional */
+  padding: var(--espacio-sm) 0;
 }
 
 figcaption {
-  color: #444;
+  color: var(--gris-oscuro);
   text-align: center;
   font-style: italic;
+  font-size: 0.9rem;
+  margin-top: var(--espacio-xs);
+}
+
+/* Contenido principal */
+.contenido-articulo p {
+  line-height: 1.8;
+  margin-bottom: var(--espacio-md);
+  font-size: 1.05rem;
+}
+
+/* Fondo específico para economía (opcional) */
+.economia-page {
+  background-color: var(--gris-claro);
 }

@@ -1108,3 +1108,69 @@ figcaption {
   margin-top: 0.5rem;
   font-style: italic;
 }
+
+/* Contenedor principal */
+.share-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Contenedor de botones */
+.share-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Texto "Compartir artículo" */
+.share-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Estilo base para botones */
+.share-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* Efecto hover */
+.share-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Colores específicos para cada red */
+.facebook { background-color: #3b5998; }
+.twitter { background-color: #1da1f2; }
+.whatsapp { background-color: #25d366; }
+
+/* Versión móvil */
+@media (max-width: 576px) {
+  .share-buttons {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8rem;
+  }
+  
+  .share-label {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0.5rem;
+  }
+}

@@ -266,29 +266,8 @@
         </div>
     </footer>
 
-    <!-- Scripts Mejorados -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        const shareButtons = document.querySelectorAll('.share-btn');
-        if (shareButtons.length > 0) {
-            const currentUrl = encodeURIComponent(window.location.href);
-            const title = encodeURIComponent(document.title);
-            
-            shareButtons.forEach(button => {
-                const network = button.classList.contains('facebook') ? 'facebook' :
-                               button.classList.contains('twitter') ? 'twitter' :
-                               button.classList.contains('whatsapp') ? 'whatsapp' : '';
-                
-                if (network === 'facebook') {
-                    button.href = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
-                } else if (network === 'twitter') {
-                    button.href = `https://twitter.com/intent/tweet?url=${currentUrl}&text=${title}`;
-                } else if (network === 'whatsapp') {
-                    button.href = `https://wa.me/?text=${title}%20${currentUrl}`;
-                }
-            });
-        }
-    });
-    </script>
+    <!-- Al final del body, después del contenido -->
+    <script src="../../js/share-buttons.js"></script>
+    <script src="../../js/main.js" defer></script>
 </body>
 </html>

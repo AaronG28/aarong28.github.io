@@ -1160,6 +1160,7 @@ figcaption {
 .twitter { background-color: #1da1f2; }
 .whatsapp { background-color: #25d366; }
 
+
 /* Versión móvil */
 @media (max-width: 576px) {
   .share-buttons {

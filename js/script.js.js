@@ -12,3 +12,4 @@ document.querySelector('.mobile-menu-btn').addEventListener('click', function() 
       document.body.classList.remove('no-scroll');
     });
   });
+

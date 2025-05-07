@@ -538,6 +538,7 @@ button {
   margin-bottom: var(--space-lg);
   max-width: 600px;
   opacity: 0.9;
+  color: white;
 }
 
 .newsletter-form {

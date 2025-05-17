@@ -3,15 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analítica 360° | Economía, Política & Tecnología</title>
+    <title>Analítica 360° | Historia - Relatos del Pasado y Análisis Críticos</title>
     <link rel="icon" type="image/png" href="img/logo.png">
-    <meta name="description" content="Análisis profundos sobre economía, política, tecnología y más. Información sin fronteras con perspectiva global.">
+    <meta name="description" content="Análisis profundos sobre relatos del pasado, análisis críticos y conexiones con el presente. Información histórica con perspectiva global.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5523656377160007" crossorigin="anonymous"></script>
+    <!-- Schema.org para SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Historia - Analítica 360°",
+      "url": "https://analitica360.es/historia.html",
+      "description": "Relatos del pasado, análisis críticos y conexiones con el presente",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Analítica 360°",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://analitica360.es/img/logo.png"
+        }
+      }
+    }
+    </script>
 </head>
 <body>
 
@@ -64,12 +82,15 @@
                 <article class="news-card">
                     <a href="articulos/historia/cuando-la-economia-era-filosofia.html" class="news-link">
                         <div class="news-img-container">
-                            <img src="img/economia-como-ciencia-portada.png" alt="Cuando la economia era filosofía" class="news-img" loading="lazy">
+                            <img src="img/economia-como-ciencia-portada.png" alt="Representación de antiguos filósofos debatiendo sobre economía" class="news-img" loading="lazy">
                         </div>
                         <div class="news-content">
                             <div class="author-container">
                                 <img src="img/foto_aaron.jpg" alt="Oswaldo A. Guevara" class="author-avatar">
                                 <span class="author-text">Por <strong>Oswaldo A. Guevara</strong></span>
+                            </div>
+                            <div class="reading-time">
+                                <i class="far fa-clock"></i> Tiempo de lectura: 8 minutos
                             </div>
                             <h3 class="news-title">Cuando la economía era filosofía: curiosidades del nacimiento de una ciencia</h3>
                             <p class="news-excerpt">En sus orígenes, fue parte de la filosofía moral, una rama especulativa sobre cómo debería organizarse la sociedad...</p>
@@ -87,12 +108,15 @@
                     <a href="articulos/historia/bomba_nuclear_españa.html" class="news-link">
                         <div class="card-badge">Crónica</div>
                         <div class="news-img-container">
-                            <img src="img/bomba_nuclearA.png" alt="Bomba nuclear en España" class="news-img" loading="lazy">
+                            <img src="img/bomba_nuclearA.png" alt="Imagen histórica del incidente nuclear de Palomares en España" class="news-img" loading="lazy">
                         </div>
                         <div class="news-content">
                             <div class="author-container">
                                 <img src="img/foto_aaron.jpg" alt="Oswaldo A. Guevara" class="author-avatar">
                                 <span class="author-text">Por <strong>Oswaldo A. Guevara</strong></span>
+                            </div>
+                            <div class="reading-time">
+                                <i class="far fa-clock"></i> Tiempo de lectura: 9 minutos
                             </div>
                             <h3 class="news-title">Crónica | El día que cayó una bomba nuclear en España</h3>
                             <p class="news-excerpt">Durante 80 días, la Marina de EE.UU. rastreó el fondo marino frente a las costas de Palomares. La búsqueda 
@@ -113,12 +137,12 @@
         <!-- Newsletter Section -->
         <section class="section newsletter-section">
             <div class="newsletter-container">
-                <div class="newsletter-text">
-                    <h3 class="newsletter-title">Mantente informado</h3>
-                    <p class="newsletter-description">Recibe nuestro análisis directamente en tu correo cada semana</p>
-                </div>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Tu correo electrónico" required class="newsletter-input">
+                <form action="https://formspree.io/f/xwpokkqy" method="POST">
+                    <div class="newsletter-text">
+                        <h3 class="newsletter-title">Mantente informado</h3>
+                        <p class="newsletter-description">Recibe nuestro análisis directamente en tu correo cada semana</p>
+                    </div>
+                    <input type="email" name="email" placeholder="Tu correo electrónico" required class="newsletter-input">
                     <button type="submit" class="newsletter-button">Suscribirse</button>
                 </form>
             </div>
@@ -161,13 +185,13 @@
                     <div class="footer-column">
                         <h4 class="footer-title">Conectar</h4>
                         <div class="footer-social">
-                            <a href="https://www.instagram.com/analitica__360/" target="_blank" class="social-link">
+                            <a href="https://www.instagram.com/analitica__360/" target="_blank" class="social-link" aria-label="Instagram">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="https://twitter.com/analitica360" target="_blank" class="social-link">
+                            <a href="https://twitter.com/analitica360" target="_blank" class="social-link" aria-label="Twitter">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="mailto:contacto@analitica360.es" class="social-link">
+                            <a href="mailto:contacto@analitica360.es" class="social-link" aria-label="Email">
                                 <i class="fas fa-envelope"></i>
                             </a>
                         </div>
@@ -179,13 +203,19 @@
                 <p class="footer-copyright">&copy; Analítica 360°. Todos los derechos reservados.</p>
                 <div class="footer-legal">
                     <a href="legales/privacidad.html" class="footer-legal-link">Política de Privacidad</a>
-                    <a href="legales/terminos.html" class="footer-legal-link">Terminos</a>
+                    <a href="legales/terminos.html" class="footer-legal-link">Términos</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Botón Volver Arriba -->
+    <button id="back-to-top" class="back-to-top" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- Scripts Mejorados -->
+    <script src="js/share-buttons.js"></script>
     <script src="js/main.js" defer></script>
 </body>
 </html>

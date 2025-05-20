@@ -949,6 +949,7 @@ blockquote {
 .facebook { background-color: #3b5998; }
 .twitter { background-color: #1da1f2; }
 .whatsapp { background-color: #25d366; }
+.copy-link {background-color: #1da1f2;}
 
 /* ========== ARTÍCULOS RELACIONADOS ========== */
 .related-articles {
@@ -1385,4 +1386,29 @@ blockquote {
   img {
     max-width: 500px !important;
   }
+}
+
+.copy-toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  z-index: 9999;
+}
+
+.copy-toast.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.copy-toast.hidden {
+  opacity: 0;
 }

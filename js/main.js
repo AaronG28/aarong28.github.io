@@ -34,3 +34,4 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.news-card, .section').forEach(element => {
     observer.observe(element);
 });
+

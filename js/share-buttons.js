@@ -5,29 +5,66 @@ function initShareButtons() {
 
     shareButtons.forEach(button => {
         if (button.classList.contains('facebook')) {
-            button.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`;
+            button.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl )}`;
         } else if (button.classList.contains('twitter')) {
-            button.href = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(title)}`;
+            button.href = `https://twitter.com/intent/tweet?url=${encodeURIComponent(currentUrl )}&text=${encodeURIComponent(title)}`;
         } else if (button.classList.contains('whatsapp')) {
-            button.href = `https://wa.me/?text=${encodeURIComponent(title)}%20${encodeURIComponent(currentUrl)}`;
+            button.href = `https://wa.me/?text=${encodeURIComponent(title )}%20${encodeURIComponent(currentUrl)}`;
         } else if (button.classList.contains('copy-link')) {
-            button.addEventListener('click', function () {
-                navigator.clipboard.writeText(currentUrl)
-                    .then(() => {
-                        const toast = document.getElementById('copy-toast');
-                        toast.classList.add('show');
-                        toast.classList.remove('hidden');
-                        setTimeout(() => {
-                            toast.classList.remove('show');
-                            toast.classList.add('hidden');
-                        }, 2500);
-                    })
-                    .catch(() => {
-                        alert("No se pudo copiar el enlace.");
-                    });
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                try {
+                    // Intenta primero con la API moderna
+                    navigator.clipboard.writeText(currentUrl)
+                        .then(() => {
+                            showCopySuccess(button);
+                        })
+                        .catch(() => {
+                            // Si falla, usa el método alternativo
+                            fallbackCopyTextToClipboard(currentUrl, button);
+                        });
+                } catch (err) {
+                    // Si hay un error general, usa el método alternativo
+                    fallbackCopyTextToClipboard(currentUrl, button);
+                }
             });
         }
     });
+    
+    // Función alternativa para copiar texto
+    function fallbackCopyTextToClipboard(text, button) {
+        const textArea = document.createElement("textarea");
+        textArea.value = text;
+        textArea.style.position = "fixed";  // Evita desplazamiento
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        
+        try {
+            document.execCommand('copy');
+            showCopySuccess(button);
+        } catch (err) {
+            alert("No se pudo copiar el enlace.");
+        }
+        
+        document.body.removeChild(textArea);
+    }
+    
+    // Función para mostrar confirmación visual
+    function showCopySuccess(button) {
+        // Guarda el contenido original
+        const originalContent = button.innerHTML;
+        
+        // Cambia a icono de éxito
+        button.innerHTML = '<i class="fas fa-check"></i>';
+        
+        // Restaura después de 2 segundos
+        setTimeout(() => {
+            button.innerHTML = originalContent;
+        }, 2000);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', initShareButtons);
+

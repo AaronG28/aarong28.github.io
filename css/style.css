@@ -767,6 +767,7 @@ main {
 }
 
 .footer-copyright {
+  color: white;
   font-size: var(--font-size-sm);
   opacity: 0.7;
 }

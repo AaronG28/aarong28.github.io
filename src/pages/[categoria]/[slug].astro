@@ -1,0 +1,40 @@
+---
+import { getCollection, render } from 'astro:content';
+import ArticleLayout from '../../layouts/ArticleLayout.astro';
+
+export async function getStaticPaths() {
+  // 1. Obtener todos los artículos de la colección
+  const articulos = await getCollection('articulos');
+  
+  // 2. Generar las rutas para cada artículo
+  return articulos.map((articulo) => {
+    // El slug se obtiene del id del artículo (ej: "politica/epistocracia-vs-democracia.md")
+    // Eliminamos la extensión .md y la carpeta para obtener solo el nombre del archivo
+    const slugFromId = articulo.id.replace(/\.md$/, '').split('/').pop();
+    
+    return {
+      params: { 
+        categoria: articulo.data.category, 
+        slug: slugFromId 
+      },
+      props: { articulo },
+    };
+  });
+}
+
+// 3. Recibimos el artículo como prop
+const { articulo } = Astro.props;
+
+// 4. ⚠️ NUEVA FORMA: usar render(entry) importado de 'astro:content'
+const { Content } = await render(articulo);
+---
+
+<ArticleLayout
+  title={articulo.data.title}
+  description={articulo.data.description}
+  date={articulo.data.date}
+  image={articulo.data.image}
+  article={articulo}
+>
+  <Content />
+</ArticleLayout>

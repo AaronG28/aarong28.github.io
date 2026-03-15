@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import { getCollection } from 'astro:content';
+
+const articulos = await getCollection('articulos');
+const articulosCategoria = articulos
+  .filter(a => a.data.category === 'economia')
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+
+const nombreCategoria = 'Economía';
+---
+
+<BaseLayout title={`${nombreCategoria} - Analítica360`}>
+  <section class="category-header">
+    <h1>{nombreCategoria}</h1>
+  </section>
+
+  {articulosCategoria.length > 0 ? (
+    <section class="articles-grid">
+      {articulosCategoria.map(a => (
+        <ArticleCard
+          title={a.data.title}
+          description={a.data.description}
+          image={a.data.image}
+          url={`/${a.data.category}/${a.id.replace(/\.md$/, '').split('/').pop()}`}
+          date={a.data.date}
+        />
+      ))}
+    </section>
+  ) : (
+    <p class="no-articles">No hay artículos en esta categoría aún.</p>
+  )}
+</BaseLayout>

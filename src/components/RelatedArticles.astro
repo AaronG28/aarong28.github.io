@@ -1,0 +1,67 @@
+---
+import { getCollection } from 'astro:content';
+
+const { currentArticle } = Astro.props;
+
+// Obtener todos los artículos
+const allArticles = await getCollection('articulos');
+const currentTags = currentArticle.data.tags || [];
+
+// Función para extraer el slug del id (ej: "politica/mi-articulo.md" → "mi-articulo")
+const getSlugFromId = (id: string) => id.replace(/\.md$/, '').split('/').pop();
+
+// Filtrar artículos relacionados: diferente ID y al menos un tag en común
+const related = allArticles
+  .filter(a => 
+    a.id !== currentArticle.id && // Comparar IDs, no slugs
+    a.data.tags?.some(tag => currentTags.includes(tag))
+  )
+  .slice(0, 3);
+---
+
+<section class="related-articles">
+  <h3>Artículos relacionados</h3>
+  {related.length > 0 ? (
+    <ul>
+      {related.map(a => {
+        const slug = getSlugFromId(a.id);
+        return (
+          <li>
+            <a href={`/${a.data.category}/${slug}`}>{a.data.title}</a>
+          </li>
+        );
+      })}
+    </ul>
+  ) : (
+    <p>No hay artículos relacionados</p>
+  )}
+</section>
+
+<style>
+  .related-articles {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-light);
+  }
+  .related-articles h3 {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .related-articles ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .related-articles li a {
+    text-decoration: none;
+    color: var(--primary-dark);
+    font-weight: 500;
+  }
+  .related-articles li a:hover {
+    color: var(--primary-light);
+    text-decoration: underline;
+  }
+</style>

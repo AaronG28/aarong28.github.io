@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Analítica 360°</title>
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5523656377160007" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="../index.html" class="logo-link">
+                    <span class="logo-main">Analítica 360°</span>
+                    <span class="logo-sub">Análisis sin fronteras</span>
+                </a>
+            </div>
+            
+            <button class="mobile-menu-btn" aria-label="Menú móvil">
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+                <span class="menu-line"></span>
+            </button>
+            
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link"><i class="fas fa-home nav-icon"></i> Portada</a></li>
+                    <li class="nav-item"><a href="../economia.html" class="nav-link"><i class="fas fa-chart-line nav-icon"></i> Economía</a></li>
+                    <li class="nav-item"><a href="../politica.html" class="nav-link"><i class="fas fa-landmark nav-icon"></i> Política</a></li>
+                    <li class="nav-item"><a href="../tecnologia.html" class="nav-link"><i class="fas fa-microchip nav-icon"></i> Tecnología</a></li>
+                    <li class="nav-item"><a href="../historia.html" class="nav-link"><i class="fas fa-book nav-icon"></i> Historia</a></li>
+                    <li class="nav-item"><a href="../mundo.html" class="nav-link"><i class="fas fa-globe nav-icon"></i> Mundo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact-container">
+        <div class="contact-hero">
+            <h1 class="contact-title">Contáctanos</h1>
+            <p class="contact-subtitle">Estamos aquí para responder tus preguntas y escuchar tus sugerencias</p>
+        </div>
+        
+        <div class="contact-grid">
+            <!-- Formulario de Contacto -->
+            <section class="contact-form-section">
+                <h2 class="section-title"><i class="fas fa-envelope-open-text"></i> Envíanos un mensaje</h2>
+                
+                <form class="contact-form" action="https://formspree.io/f/xwpokkqy" method="POST">
+                    <div class="form-group">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Tu nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="asunto" class="form-label">Asunto</label>
+                        <select id="asunto" name="asunto" class="form-input" required>
+                            <option value="" disabled selected>Selecciona un asunto</option>
+                            <option value="Consulta">Consulta general</option>
+                            <option value="Sugerencia">Sugerencia</option>
+                            <option value="Colaboracion">Propuesta de colaboración</option>
+                            <option value="Publicidad">Publicidad y patrocinios</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" class="form-textarea" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    
+                    <input type="hidden" name="_subject" value="Nuevo mensaje desde Analítica 360">
+                    <button type="submit" class="form-submit">
+                        <i class="fas fa-paper-plane"></i> Enviar mensaje
+                    </button>
+                </form>
+            </section>
+            
+            <!-- Información de Contacto -->
+            <section class="contact-info-section">
+                <h2 class="section-title"><i class="fas fa-info-circle"></i> Información de contacto</h2>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Correo electrónico</h3>
+                            <a href="mailto:contacto@analitica360.es" class="contact-link">contacto@analitica360.es</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Instagram</h3>
+                            <a href="https://www.instagram.com/analitica__360/" target="_blank" class="contact-link">@analitica__360</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Horario de atención</h3>
+                            <p>Lunes a Viernes<br>9:00 - 18:00 hrs</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="../index.html" class="footer-logo">Analítica 360°</a>
+                    <p class="footer-slogan">Análisis sin fronteras</p>
+                    <p class="footer-about">Plataforma independiente de análisis sobre economía, política, tecnología y tendencias globales.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 class="footer-title">Legal</h4>
+                        <ul class="footer-list">
+                            <li><a href="../legales/privacidad.html" class="footer-link">Privacidad</a></li>
+                            <li><a href="../legales/acerca-de.html" class="footer-link">Acerca de</a></li>
+                            <li><a href="../legales/contacto.html" class="footer-link">Contacto</a></li>
+                            <li><a href="../legales/terminos.html" class="footer-link">Términos</a></li>
+                            <li><a href="../legales/cookies.html" class="footer-link">Cookies</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4 class="footer-title">Conectar</h4>
+                        <div class="footer-social">
+                            <a href="https://www.instagram.com/analitica__360/" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://twitter.com/analitica360" target="_blank" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="mailto:contacto@analitica360.es" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; Analítica 360°. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js" defer></script>
+</body>
+</html>

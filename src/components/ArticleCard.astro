@@ -1,0 +1,14 @@
+---
+import FormattedDate from './FormattedDate.astro';
+
+const { title, description, image, url, date } = Astro.props;
+---
+
+<article class="article-card">
+  <a href={url} style="text-decoration: none; color: inherit;">
+    <img src={image} alt={title} loading="lazy" />
+    <h3>{title}</h3>
+    <p>{description}</p>
+    <FormattedDate date={new Date(date)} />
+  </a>
+</article>

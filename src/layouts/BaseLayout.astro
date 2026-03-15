@@ -1,0 +1,84 @@
+---
+import '../styles/global.css';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  date?: Date;
+  image?: string;
+}
+
+const { title, description, date, image } = Astro.props;
+---
+
+<html lang="es">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+  <body>
+    <Header />
+    <main>
+      {image && (
+        <div class="hero-image">
+          <img src={image} alt={title} />
+        </div>
+      )}
+      <div class="prose">
+        {date && (
+          <time datetime={date.toISOString()}>
+            {date.toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}
+          </time>
+        )}
+        <h1>{title}</h1>
+        <hr />
+        <slot />
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .hero-image {
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .prose {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 1rem 3rem;
+  }
+  .prose time {
+    display: block;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .prose h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-dark);
+  }
+  .prose hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, var(--border-light) 0%, transparent 100%);
+    margin: 2rem 0;
+  }
+  .prose p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+</style>

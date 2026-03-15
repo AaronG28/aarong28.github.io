@@ -1,7 +1,7 @@
 ---
 title: "1984: Las tres Naciones"
 description: "Un análisis sobre las tres superpotencias de la novela '1984' de George Orwell y su paralelismo con la geopolítica actual entre Estados Unidos, Rusia y China."
-image: "/public/img/1984.png"
+image: "/img/1984.png"
 date: 2025-05-10
 category: "politica"
 tags: ["orwell", "1984", "geopolítica", "totalitarismo"]
@@ -9,7 +9,7 @@ author: "Flavio Neidine"
 ---
 
 <div class="author-container">
-  <img src="/public/img/flavio.jpg" alt="Flavio Neidine" class="author-avatar">
+  <img src="/img/flavio.jpg" alt="Flavio Neidine" class="author-avatar">
   <span class="author-text">Por Flavio Neidine</span>
 </div>
 
@@ -23,7 +23,7 @@ author: "Flavio Neidine"
 </div>
 
 <figure class="article-image-container">
-  <img src="/public/img/1984.png" alt="Representación artística del mundo distópico de 1984" class="article-image">
+  <img src="/img/1984.png" alt="Representación artística del mundo distópico de 1984" class="article-image">
   <figcaption class="image-caption">Imagen generada con Inteligencia Artificial - A360</figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ El doblepiensa es uno de los conceptos más poderosos y escalofriantes de 1984. 
 > "Saber y no saber, estar consciente de la verdad completa mientras se dicen mentiras cuidadosamente construidas, sostener simultáneamente dos opiniones que se cancelan mutuamente, saber que son contradictorias y creer en ambas"
 
 <figure class="article-image-container">
-  <img src="/public/img/1984-b.png" alt="Representación del concepto de doblepiensa en la sociedad moderna" class="article-image">
+  <img src="/img/1984-b.png" alt="Representación del concepto de doblepiensa en la sociedad moderna" class="article-image">
   <figcaption class="image-caption">Imagen generada con Inteligencia Artificial - A360</figcaption>
 </figure>
 

@@ -1,7 +1,7 @@
 ---
 title: "Epistocracia vs. Democracia: ¿Es Justo que Todos Decidan sin Saber?"
 description: "Análisis sobre los límites de la democracia actual y el debate sobre la epistocracia como alternativa para la toma de decisiones políticas."
-image: "/public/img/epistogracia-vs-democracia-a.png"
+image: "/img/epistogracia-vs-democracia-a.png"
 date: 2025-05-03
 category: "politica"
 tags: ["epistocracia", "democracia", "filosofía política", "Jason Brennan", "participación ciudadana"]
@@ -9,7 +9,7 @@ author: "Oswaldo A. Guevara"
 ---
 
 <div class="author-container">
-  <img src="/public/img/foto_aaron.jpg" alt="Oswaldo A. Guevara" class="author-avatar">
+  <img src="/img/foto_aaron.jpg" alt="Oswaldo A. Guevara" class="author-avatar">
   <span class="author-text">Por Oswaldo A. Guevara</span>
 </div>
 
@@ -25,7 +25,7 @@ author: "Oswaldo A. Guevara"
 ## Los problemas de la democracia actual
 
 <figure class="article-image-container">
-  <img src="/public/img/epistogracia-vs-democracia-a.png" alt="Representación de los problemas en la democracia moderna" class="article-image">
+  <img src="/img/epistogracia-vs-democracia-a.png" alt="Representación de los problemas en la democracia moderna" class="article-image">
   <figcaption class="image-caption">Problemas en la democracia moderna - **A360**</figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ Este fenómeno no es nuevo —*Tocqueville, Mill o incluso los griegos clásicos
 ## La epistocracia: ¿una solución o una amenaza?
 
 <figure class="article-image-container">
-  <img src="/public/img/epistocracia-vs-democracia-b.png" alt="Representación del peso de la Epistocracia en la sociedad" class="article-image">
+  <img src="/img/epistocracia-vs-democracia-b.png" alt="Representación del peso de la Epistocracia en la sociedad" class="article-image">
   <figcaption class="image-caption">Representación del peso de la Epistocracia en la sociedad - **A360**</figcaption>
 </figure>
 

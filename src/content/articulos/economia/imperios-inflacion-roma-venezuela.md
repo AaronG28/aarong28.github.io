@@ -1,7 +1,7 @@
 ---
 title: "Imperios que cayeron por la inflación: de Roma a Venezuela"
 description: "Un recorrido histórico por los grandes imperios y naciones que sucumbieron ante el poder destructivo de la inflación, desde la Roma antigua hasta la Venezuela contemporánea."
-image: "/public/img/imperios-inflacion-A.png"
+image: "/img/imperios-inflacion-A.png"
 date: 2025-05-20
 category: "economia"
 tags: ["inflación", "hiperinflación", "historia económica", "Roma", "Weimar", "Venezuela"]

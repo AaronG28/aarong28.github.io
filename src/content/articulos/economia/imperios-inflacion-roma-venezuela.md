@@ -34,7 +34,7 @@ Desde las monedas de plata cada vez más "aguadas" del Imperio Romano hasta los 
 ## Roma: cuando el denario perdió su brillo
 
 <figure class="article-image-container">
-  <img src="/public/img/imperios-inlfacion-b.png" alt="Monedas romanas mostrando la degradación de su contenido de plata a lo largo del tiempo" class="article-image">
+  <img src="/public/img/imperios-inflacion-b.png" alt="Monedas romanas mostrando la degradación de su contenido de plata a lo largo del tiempo" class="article-image">
   <figcaption class="image-caption">Evolución de las monedas romanas: de casi pura plata a simples discos de cobre bañados - **A360**</figcaption>
 </figure>
 

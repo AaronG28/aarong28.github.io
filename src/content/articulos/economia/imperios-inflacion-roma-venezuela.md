@@ -9,7 +9,7 @@ author: "Oswaldo A. Guevara"
 ---
 
 <div class="author-container">
-  <img src="/public/img/foto_aaron.jpg" alt="Oswaldo A. Guevara" class="author-avatar">
+  <img src="/img/foto_aaron.jpg" alt="Oswaldo A. Guevara" class="author-avatar">
   <span class="author-text">Por Oswaldo A. Guevara</span>
 </div>
 
@@ -23,7 +23,7 @@ author: "Oswaldo A. Guevara"
 </div>
 
 <figure class="article-image-container">
-  <img src="/public/img/imperios-inflacion-A.png" alt="Representación artística de monedas romanas devaluadas junto a billetes modernos hiperinflacionarios" class="article-image">
+  <img src="/img/imperios-inflacion-A.png" alt="Representación artística de monedas romanas devaluadas junto a billetes modernos hiperinflacionarios" class="article-image">
   <figcaption class="image-caption">La inflación: el enemigo invisible que ha derribado imperios a lo largo de la historia - A360</figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ Desde las monedas de plata cada vez más "aguadas" del Imperio Romano hasta los 
 ## Roma: cuando el denario perdió su brillo
 
 <figure class="article-image-container">
-  <img src="/public/img/imperios-inflacion-b.png" alt="Monedas romanas mostrando la degradación de su contenido de plata a lo largo del tiempo" class="article-image">
+  <img src="/img/imperios-inflacion-b.png" alt="Monedas romanas mostrando la degradación de su contenido de plata a lo largo del tiempo" class="article-image">
   <figcaption class="image-caption">Evolución de las monedas romanas: de casi pura plata a simples discos de cobre bañados - **A360**</figcaption>
 </figure>
 
@@ -47,7 +47,7 @@ Los resultados fueron predecibles: los precios se dispararon. Un modesto soldado
 ## Weimar: cuando el papel moneda servía mejor como papel higiénico
 
 <figure class="article-image-container">
-  <img src="/public/img/imperios-inflacion-c.png" alt="Niños alemanes jugando con bloques de billetes durante la hiperinflación de Weimar" class="article-image">
+  <img src="/img/imperios-inflacion-c.png" alt="Niños alemanes jugando con bloques de billetes durante la hiperinflación de Weimar" class="article-image">
   <figcaption class="image-caption">Niños alemanes usando billetes como bloques de construcción durante la hiperinflación de 1923 - A360</figcaption>
 </figure>
 
@@ -62,7 +62,7 @@ Las anécdotas de esta época son tan trágicas como hilarantes. Las amas de cas
 ## Venezuela: cuando los billetes pesan más que lo que puedes comprar con ellos
 
 <figure class="article-image-container">
-  <img src="/public/img/imperios-inflacion-d.png" alt="Billetes venezolanos usados para crear artesanías debido a su escaso valor monetario" class="article-image">
+  <img src="/img/imperios-inflacion-d.png" alt="Billetes venezolanos usados para crear artesanías debido a su escaso valor monetario" class="article-image">
   <figcaption class="image-caption">Artesanías hechas con billetes venezolanos, un uso más valioso que el monetario - A360</figcaption>
 </figure>
 

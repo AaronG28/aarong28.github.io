@@ -24,7 +24,7 @@ author: "Flavio Neidine"
 
 <figure class="article-image-container">
   <img src="/public/img//img/" alt="Manifestantes en Burkina Faso con banderas nacionales y pancartas contra la influencia francesa" class="article-image">
-  <figcaption class="image-caption">Manifestantes en Burkina Faso con banderas nacionales y pancartas contra la influencia francesa - **A360**</figcaption>
+  <figcaption class="image-caption">Manifestantes en Burkina Faso con banderas nacionales y pancartas contra la influencia francesa - A360</figcaption>
 </figure>
 
 Burkina Faso vive un momento de transformación política y social bajo el liderazgo del gobierno militar encabezado por el capitán Ibrahim Traoré, quien llegó al poder tras un golpe de Estado en 2022. Sin embargo, pese a la magnitud de los cambios y la creciente resistencia popular contra la influencia extranjera —especialmente francesa—, los medios occidentales han dedicado escasa cobertura a los sucesos que están redefiniendo el futuro de este país africano.
@@ -41,7 +41,7 @@ A pesar de la relevancia geopolítica de estos cambios, la atención mediática 
 
 <figure class="article-image-container">
   <img src="/public/img/" alt="El capitán Ibrahim Traoré durante un discurso a la nación burkinesa" class="article-image">
-  <figcaption class="image-caption">El capitán Ibrahim Traoré durante un discurso a la nación burkinesa - **A360**</figcaption>
+  <figcaption class="image-caption">El capitán Ibrahim Traoré durante un discurso a la nación burkinesa - A360</figcaption>
 </figure>
 
 Esta invisibilidad mediática contrasta con la importancia estratégica de los acontecimientos. Burkina Faso, junto con Mali y Níger, está reconfigurando el mapa geopolítico del Sahel, una región clave para la seguridad europea debido a su proximidad geográfica y su papel como contención frente a la migración irregular y el terrorismo.
@@ -58,7 +58,7 @@ Por su parte, Rusia ha aprovechado este vacío para expandir su presencia. El gr
 
 <figure class="article-image-container">
   <img src="/public/img/" alt="Manifestantes burkineses quemando banderas francesas durante una protesta en Uagadugú" class="article-image">
-  <figcaption class="image-caption">Manifestantes burkineses quemando banderas francesas durante una protesta en Uagadugú - **A360**</figcaption>
+  <figcaption class="image-caption">Manifestantes burkineses quemando banderas francesas durante una protesta en Uagadugú - A360</figcaption>
 </figure>
 
 El capitán Ibrahim Traoré y su gobierno argumentan que su postura contra la presencia militar francesa y el neocolonialismo es necesaria para recuperar la soberanía nacional. Desde su perspectiva, la dependencia histórica de potencias extranjeras ha perpetuado la explotación de recursos, la inestabilidad política y la inseguridad en la región.
@@ -77,7 +77,7 @@ Traoré representa una corriente antiimperialista cada vez más fuerte en Áfric
 
 <figure class="article-image-container">
   <img src="/public/img/" alt="Jóvenes burkineses participando en una milicia de autodefensa contra grupos yihadistas" class="article-image">
-  <figcaption class="image-caption">Jóvenes burkineses participando en una milicia de autodefensa contra grupos yihadistas - **A360**</figcaption>
+  <figcaption class="image-caption">Jóvenes burkineses participando en una milicia de autodefensa contra grupos yihadistas - A360</figcaption>
 </figure>
 
 Los desafíos son enormes. La amenaza yihadista sigue siendo real, con grupos como el Estado Islámico del Gran Sáhara y Jama'at Nasr al-Islam wal Muslimin controlando amplias zonas del territorio. La economía, dependiente de la exportación de oro y algodón, sufre las consecuencias del aislamiento internacional. Y la transición democrática, prometida pero sin fecha concreta, genera incertidumbre sobre el futuro político.

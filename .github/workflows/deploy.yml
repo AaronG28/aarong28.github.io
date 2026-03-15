@@ -2,29 +2,25 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]  # Se activa al hacer push en main
-  workflow_dispatch:  # Permite ejecutarlo manualmente
+    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repositorio
+      - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Instalar Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: 'npm'
-
-      - name: Instalar dependencias
+      - name: Install dependencies
         run: npm ci
-
-      - name: Construir el sitio
+      - name: Build with Astro
         run: npm run build
-
-      - name: Subir artefacto (carpeta dist)
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
@@ -39,6 +35,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Desplegar en GitHub Pages
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

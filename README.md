@@ -1,62 +1,99 @@
-# Astro Starter Kit: Blog
+# Analítica360
 
-```sh
-npm create astro@latest -- --template blog
+**Analítica360** es una plataforma digital dedicada al análisis y la reflexión sobre economía, política, tecnología e historia. El objetivo del proyecto es ofrecer contenido claro, riguroso y accesible que ayude a comprender los fenómenos sociales, económicos y políticos del mundo actual.
+
+El sitio está construido con **Astro**, lo que permite un rendimiento rápido, una estructura optimizada para SEO y una arquitectura moderna basada en contenido.
+
+---
+
+## Tecnologías utilizadas
+
+* **Astro** – Framework principal del sitio
+* **Markdown / MDX** – Creación de artículos
+* **TypeScript** – Tipado y organización del código
+* **CSS** – Estilos personalizados
+* **Astro Content Collections** – Gestión de artículos
+
+---
+
+## Estructura del proyecto
+
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-Features:
-
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and Open Graph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-├── public/
+.
+├── public/              # Archivos estáticos (imágenes, favicon, etc.)
 ├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
+│   ├── components/      # Componentes reutilizables
+│   ├── content/         # Artículos en Markdown
+│   │   └── articulos/
+│   ├── layouts/         # Layouts del sitio
+│   ├── pages/           # Páginas y rutas
+│   └── styles/          # Estilos globales
+├── astro.config.mjs     # Configuración de Astro
 ├── package.json
 └── tsconfig.json
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+---
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Categorías del sitio
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+El contenido se organiza en cuatro áreas principales:
 
-Any static assets, like images, can be placed in the `public/` directory.
+* **Economía**
+* **Política**
+* **Tecnología**
+* **Historia**
 
-## 🧞 Commands
+Cada artículo pertenece a una categoría y se genera automáticamente en su ruta correspondiente.
 
-All commands are run from the root of the project, from a terminal:
+Ejemplo:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+```
+/economia/mi-articulo
+/politica/analisis-electoral
+```
 
-## 👀 Want to learn more?
+---
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Desarrollo local
 
-## Credit
+Para ejecutar el proyecto en tu máquina:
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+Instalar dependencias
+
+```
+npm install
+```
+
+Iniciar servidor de desarrollo
+
+```
+npm run dev
+```
+
+Abrir en el navegador:
+
+```
+http://localhost:4321
+```
+
+---
+
+## Compilar para producción
+
+```
+npm run build
+```
+
+La versión final del sitio se generará en la carpeta:
+
+```
+/dist
+```
+
+---
+
+## Licencia
+
+© Analítica360. Todos los derechos reservados.
+

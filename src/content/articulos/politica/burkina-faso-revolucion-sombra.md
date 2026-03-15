@@ -9,7 +9,7 @@ author: "Flavio Neidine"
 ---
 
 <div class="author-container">
-  <img src="../../../../public/fonts/flavio.jpg" alt="Flavio Neidine" class="author-avatar">
+  <img src="/public/img/flavio.jpg" alt="Flavio Neidine" class="author-avatar">
   <span class="author-text">Por Flavio Neidine</span>
 </div>
 
@@ -23,7 +23,7 @@ author: "Flavio Neidine"
 </div>
 
 <figure class="article-image-container">
-  <img src="/img/burkina-faso-portada.png" alt="Manifestantes en Burkina Faso con banderas nacionales y pancartas contra la influencia francesa" class="article-image">
+  <img src="/public/img//img/" alt="Manifestantes en Burkina Faso con banderas nacionales y pancartas contra la influencia francesa" class="article-image">
   <figcaption class="image-caption">Manifestantes en Burkina Faso con banderas nacionales y pancartas contra la influencia francesa - **A360**</figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ A pesar de la relevancia geopolítica de estos cambios, la atención mediática 
 > "Pero en Occidente, estas luchas rara vez son noticia, a menos que haya una crisis humanitaria o intereses económicos en juego".
 
 <figure class="article-image-container">
-  <img src="/img/burkina-faso-traore.png" alt="El capitán Ibrahim Traoré durante un discurso a la nación burkinesa" class="article-image">
+  <img src="/public/img/" alt="El capitán Ibrahim Traoré durante un discurso a la nación burkinesa" class="article-image">
   <figcaption class="image-caption">El capitán Ibrahim Traoré durante un discurso a la nación burkinesa - **A360**</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ Por su parte, Rusia ha aprovechado este vacío para expandir su presencia. El gr
 ## ¿Está actuando bien el gobierno de Burkina Faso al expulsar el neocolonialismo?
 
 <figure class="article-image-container">
-  <img src="/img/burkina-faso-manifestacion.png" alt="Manifestantes burkineses quemando banderas francesas durante una protesta en Uagadugú" class="article-image">
+  <img src="/public/img/" alt="Manifestantes burkineses quemando banderas francesas durante una protesta en Uagadugú" class="article-image">
   <figcaption class="image-caption">Manifestantes burkineses quemando banderas francesas durante una protesta en Uagadugú - **A360**</figcaption>
 </figure>
 
@@ -76,7 +76,7 @@ El futuro del país sigue siendo incierto, pero una cosa es clara: Burkina Faso 
 Traoré representa una corriente antiimperialista cada vez más fuerte en África, pero el verdadero éxito dependerá de si su gobierno logra su estabilidad y seguridad, un desarrollo económico real (que los recursos beneficien a los burkinéses, no solo a nuevas potencias extranjeras) y también logre su propia legitimidad política (evitando que la "revolución" se convierta en otra dictadura militar).
 
 <figure class="article-image-container">
-  <img src="/img/burkina-faso-futuro.png" alt="Jóvenes burkineses participando en una milicia de autodefensa contra grupos yihadistas" class="article-image">
+  <img src="/public/img/" alt="Jóvenes burkineses participando en una milicia de autodefensa contra grupos yihadistas" class="article-image">
   <figcaption class="image-caption">Jóvenes burkineses participando en una milicia de autodefensa contra grupos yihadistas - **A360**</figcaption>
 </figure>
 

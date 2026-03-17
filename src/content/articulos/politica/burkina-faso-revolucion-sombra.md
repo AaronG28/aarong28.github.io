@@ -1,7 +1,7 @@
 ---
 title: "Burkina Faso: Una revolución en la sombra con poca visibilidad en Occidente"
 description: "Análisis sobre la transformación política y social de Burkina Faso bajo el liderazgo del capitán Ibrahim Traoré y la escasa cobertura mediática occidental de estos cambios."
-image: "/img/burkina-faso-portada.png"
+image: "/public/img/burkina-faso-c.png"
 date: 2025-06-14
 category: "politica"
 tags: ["Burkina Faso", "África", "geopolítica", "Ibrahim Traoré", "neocolonialismo", "Sahel"]
@@ -15,7 +15,7 @@ author: "Flavio Neidine"
 
 <div class="meta-info">
   <span class="date"><i class="far fa-calendar-alt"></i> 14 de Junio, 2025</span>
-  <span class="category"><i class="fas fa-globe"></i> Política</span>
+  <span class="category"><i class="fas fa-book"></i> Política</span>
 </div>
 
 <div class="reading-time">
@@ -23,7 +23,7 @@ author: "Flavio Neidine"
 </div>
 
 <figure class="article-image-container">
-  <img src="/public/img//img/" alt="Manifestantes en Burkina Faso con banderas nacionales y pancartas contra la influencia francesa" class="article-image">
+  <img src="/public/img/burkina-faso-a.png" alt="Manifestantes en Burkina Faso con banderas nacionales y pancartas contra la influencia francesa" class="article-image">
   <figcaption class="image-caption">Manifestantes en Burkina Faso con banderas nacionales y pancartas contra la influencia francesa - A360</figcaption>
 </figure>
 
@@ -40,8 +40,8 @@ A pesar de la relevancia geopolítica de estos cambios, la atención mediática 
 > "Pero en Occidente, estas luchas rara vez son noticia, a menos que haya una crisis humanitaria o intereses económicos en juego".
 
 <figure class="article-image-container">
-  <img src="/public/img/" alt="El capitán Ibrahim Traoré durante un discurso a la nación burkinesa" class="article-image">
-  <figcaption class="image-caption">El capitán Ibrahim Traoré durante un discurso a la nación burkinesa - A360</figcaption>
+  <img src="/public/img/burkina-faso-b.png" alt="El capitán Ibrahim Traoré durante un discurso a la nación burkinesa" class="article-image">
+  <figcaption class="image-caption">Representación del capitan Ibrahim - A360</figcaption>
 </figure>
 
 Esta invisibilidad mediática contrasta con la importancia estratégica de los acontecimientos. Burkina Faso, junto con Mali y Níger, está reconfigurando el mapa geopolítico del Sahel, una región clave para la seguridad europea debido a su proximidad geográfica y su papel como contención frente a la migración irregular y el terrorismo.
@@ -57,7 +57,7 @@ Por su parte, Rusia ha aprovechado este vacío para expandir su presencia. El gr
 ## ¿Está actuando bien el gobierno de Burkina Faso al expulsar el neocolonialismo?
 
 <figure class="article-image-container">
-  <img src="/public/img/" alt="Manifestantes burkineses quemando banderas francesas durante una protesta en Uagadugú" class="article-image">
+  <img src="/public/img/burkina-faso-c.png" alt="Manifestantes burkineses quemando banderas francesas durante una protesta en Uagadugú" class="article-image">
   <figcaption class="image-caption">Manifestantes burkineses quemando banderas francesas durante una protesta en Uagadugú - A360</figcaption>
 </figure>
 
@@ -76,7 +76,7 @@ El futuro del país sigue siendo incierto, pero una cosa es clara: Burkina Faso 
 Traoré representa una corriente antiimperialista cada vez más fuerte en África, pero el verdadero éxito dependerá de si su gobierno logra su estabilidad y seguridad, un desarrollo económico real (que los recursos beneficien a los burkinéses, no solo a nuevas potencias extranjeras) y también logre su propia legitimidad política (evitando que la "revolución" se convierta en otra dictadura militar).
 
 <figure class="article-image-container">
-  <img src="/public/img/" alt="Jóvenes burkineses participando en una milicia de autodefensa contra grupos yihadistas" class="article-image">
+  <img src="/public/img/burkina-faso-d.png" alt="Jóvenes burkineses participando en una milicia de autodefensa contra grupos yihadistas" class="article-image">
   <figcaption class="image-caption">Jóvenes burkineses participando en una milicia de autodefensa contra grupos yihadistas - A360</figcaption>
 </figure>
 
